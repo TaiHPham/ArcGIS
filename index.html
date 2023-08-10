@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -15,20 +16,16 @@
             width: 100%;
         }
     </style>
+    <!-- require ArcGIS REST JS libraries from https://unpkg.com -->
+    <script src="https://unpkg.com/@esri/arcgis-rest-request@4.0.0/dist/bundled/request.umd.js"></script>
+    <script src="https://unpkg.com/@esri/arcgis-rest-demographics@4.0.0/dist/bundled/demographics.umd.js"></script>
     <link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/light/main.css">
-    <script>
-        const apiKey = "AAPK1697531f68154e52a7af9c1ab0d57d1106Rjv_iHhZKlpG4OuGST9Hr_YdnA5I96Q8vO-N-xgAUU92k7U1hk9JbaQ2C4Ak4m"
-    </script>
     <script src="https://js.arcgis.com/4.27/"></script>
-    <script src="js/map.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/route.js"></script>
-    <script src="js/find_place.js"></script>
-
 </head>
 
 <body>
     <div id="viewDiv"></div>
 </body>
 
+<script src="dist/bundle.js"></script>
 </html>
