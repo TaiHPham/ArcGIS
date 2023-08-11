@@ -1,8 +1,6 @@
-import esriConfig from "@arcgis/core/config.js"
 import Search from "@arcgis/core/widgets/Search.js";
 
-export function search(apiKey) {
-    esriConfig.apiKey = apiKey;
+export function search() {
     const search = new Search({ //Add Search widget
         view: view
     });
